@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Productos</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Fecha ingreso</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of productos" class="text-center">
+            <td>{{product.id}}</td>
+            <td>{{product.nombre}}</td>
+            <td>{{product.cantidad}}</td>
+            <td>{{product.fechaIngreso}}</td>
+            <td>
+              <button type="button" class="btn btn-warning" style="margin-right:2rem;">Editar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
